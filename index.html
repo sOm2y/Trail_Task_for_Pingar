@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pingar</title>
+    <meta name="description" content="Prototpye for pingar"/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+      
+    <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">  
+    
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      
+        <!-- Navigation  -->
+      		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				
+				<a href="index.html" class="navbar-brand"><img src="pingar/logo_white.png"></a>
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class ="icon-bar"></span>
+					<span class ="icon-bar"></span>
+					<span class ="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">	
+                    <small>
+					<ul class="nav navbar-nav navbar-right" >
+						<li class="active"><a href="home.html"><i class="fa fa-home" ></i><small> HOME</small></a></li>
+					
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>PRODUCTS</small><b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="category.html">Men</a></li>
+								<li><a href="category.html">Women</a></li>
+								<li><a href="category.html">Children</a></li>
+								<li><a href="category.html">accessories</a></li>
+								
+							</ul>
+						</li>
+                        
+                        <li><a href="#login" data-toggle="modal"><small>SUPPORT</small></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>ABOUT</small><b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="category.html">Men</a></li>
+								<li><a href="category.html">Women</a></li>
+								<li><a href="category.html">Children</a></li>
+								<li><a href="category.html">accessories</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#register" data-toggle="modal"><small>CONTACT US</small></a></li>
+                      
+					</ul>
+                    </small>
+				</div>
+			</div>
+
+		</div>
+
+      <!-- Navigation Ends  -->
+      
+      
+      
+      
+      
+      
+      <div class="container" style="margin-top:20%; margin-bottom:10%;">
+          
+          <div class="row" style="margin-top:15px; margin-bottom:25px;">
+              
+                 <div class="col-md-10">
+                      <input type="text" class="form-control" placeholder="Type File Name">
+                  </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-default" href="search.html"><i class="fa fa-search fa-lg"></i></a>
+                    </div>
+                  
+          </div>
+          
+    
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="row" style="margin-top:15px;">
+                <div class="col-md-5">
+                   <div id="slider" class="ui-slider">
+                    <div class="ui-slider-segment"></div>
+                    <div class="ui-slider-segment"></div>
+                    <div class="ui-slider-segment"></div>
+                    <div class="ui-slider-segment"></div>
+                     <div class="ui-slider-segment"></div>
+                    <div class="ui-slider-segment"></div>
+                  </div>
+              </div>
+              
+                 <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseOne">
+                             <center> Advance Search</center>
+                                </a>
+                            </h4>
+                        </div>
+
+
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-xs-4">
+
+                                          <label class="checkbox" for="checkbox1">
+                                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                            Unchecked
+                                          </label>
+                                          <label class="checkbox" for="checkbox2">
+                                            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+                                            Checked
+                                          </label>
+                                          <label class="checkbox" for="checkbox3">
+                                            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+                                            Disabled unchecked
+                                          </label>
+                                          <label class="checkbox" for="checkbox4">
+                                            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
+                                            Disabled checked
+                                          </label>
+                                        </div> <!-- /checkboxes col-xs-3 -->
+
+                                           <div class="col-xs-4">
+
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                            Radio is off
+                                          </label>
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+                                            Radio is on
+                                          </label>
+
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+                                            Disabled radio is off
+                                          </label>
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+                                            Disabled radio is on
+                                          </label>
+                                        </div> <!-- /radios col-xs-3 -->
+
+                                        <div class="col-xs-4">
+
+                                            <input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
+                                        </div>
+
+                                   
+                                </div> <!-- /row --> 
+                            </div>
+                        </div>
+                    </div><!-- /panel -->
+
+            </div>
+              
+              
+              
+              
+              
+              
+              
+             
+         
+              
+      
+            
+        </div>
+      
+      </div>
+      
+      
+      
+   
+      
+      
+      
+      
+
+            <!--   footer    -->
+		
+			<footer style="background-color:transparent; ">
+			<div class="jumbotron" style="background-color:transparent;">
+				<div class="container" >
+					<div class="row" >
+
+						<div class="col-lg-5">
+												
+							<a href="#"><img src="pingar/logo_white_32.png"></a>				
+							
+						</div>
+                        
+                        <div class="col-lg-2">												
+                                <ul>
+                                  
+                                    <li ><a href="#" style="color:#57819C;">SOLUTIONS</a></li>
+                                
+                                   
+                                </ul>  																		
+                         </div>
+
+
+                        <div class="col-lg-2">
+                                    <ul>
+                                  
+                                    <li ><a href="#" style="color:#57819C;">COMPANY</a></li>
+                                
+                                   
+                                </ul>  		
+                        </div>	
+
+
+                        <div class="col-lg-2">
+                               <ul>
+                                  
+                                    <li ><a href="#" style="color:#57819C;">CONTACT</a></li>
+                                
+                                   
+                                </ul>  		
+                        </div>		
+                                          
+					</div>
+                    
+                    
+                    
+                    <div class="row" >
+
+						<div class="col-lg-5" style="text-align:left;">
+												
+							<div class="small-footer">As a leader in text analytics, we solve problems faced by organizations that have large amounts of unstructured text to manage and value to extract. Our products and professional services assist your organization to create taxonomies, categorize your data, and improve your search outcomes.</div>			
+							
+                            <br/>
+                              <a href="#"class="fa fa-linkedin-square fa-2x"></a>
+                    <a href="#"class="fa fa-facebook-square fa-2x"></a>
+                    <a href="#"class="fa fa-twitter-square fa-2x"></a>
+                    <a href="#"class="fa fa-google-plus-square fa-2x"></a>
+                    <a href="#"class="fa fa-youtube-square fa-2x"></a>
+                
+                            
+						</div>
+                        
+                       
+                        
+
+                        <div class="col-lg-2">
+                                <ul>
+                                    <small>
+                                    <li><a href="#">SharePoint</a></li>
+                                    <li><a href="#">Taxonomy Editor</a></li>
+                                    <li><a href="#">API Server</a></li>
+                                    </small>
+                                </ul>    
+                        </div>	
+
+
+                        <div class="col-lg-2">
+                               <ul><small>
+                                   
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    </small>
+                                </ul>    
+                        </div>		
+                                    
+                        
+                         <div class="col-lg-3">
+                                 <ul><small>
+                                   
+                                    <li><strong><i class="fa fa-map-marker"></i> Auckland Head Office</strong></li>
+                                    <li><a href="#">152 Quay St, Level 10 
+Auckland, New Zealand</a></li><br/>
+                                    <li><strong><i class="fa fa-map-marker"></i> Plug & Play Tech Center</strong></li>
+                                    <li><a href="#">440 N. Wolfe Rd
+Sunnyvale, CA 94085</a></li>
+                                    </small>
+                                </ul>    
+                        </div>
+                        
+					</div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+				</div>
+                
+			</div>
+      
+      
+            
+		</footer>
+    
+    
+    
+        <div class="container">
+			<div class="row">
+                <div class="col-sm-7">
+               <small>  Powered By <a href="http://blog.som2y.com"><em>sOm2y</em></a></small> 
+                
+                </div> 
+                
+                    
+                    <div class="col-sm-5" style="text-align:right;">    
+
+
+                        <small><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>  | Copyright &copy; <a href="#">2014 Pingar</a></small>
+
+
+                    </div>
+            </div>
+			</div>
+       
+    
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/4.3/video.js"></script>
+    <script src="js/application.js"></script>
+  </body>
+</html>
