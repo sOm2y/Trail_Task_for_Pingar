@@ -1,0 +1,28 @@
+The problem: Design a UI that allows users to detect duplicate documents.
+
+In an organization, duplicates (copies) of the same document can be found in many places. A document created by Jim might have been emailed to Jane and Alex. Now all of them have a copy of the document on their email and maybe in their hard drive if they downloaded it. With cloud solutions and fileshare systems, this one document might appear in many locations.
+
+We have the technology to identify these duplicate documents. For some we are 100% certain they are copies of each other, for other the confidence score we return might be lower.
+Consider 3 types of duplicate documents:
+1. Exact duplicates (identical files).
+2. Duplicate content but different document type (e.g., .doc, .docx and .pdf versions of the same content)
+3. Special case of near-duplicates. Here the documents can be considered as versions since the content might have changed a little by the user (e.g. fixed a typo, added a coma etc.).
+
+We want an interface that displays the different types of duplicates to the users, shows them how many we found in each category and the option to view or to filter by our confidence score (score .95 means we are 95% sure the files are duplicates).
+
+The users should also be able to review the duplicates and export the information.
+
+What we expect from you:
+- Create some fake data.
+- Create a mock up UI that deals with the above problem in a user friendly way. This can be a low fidelity wireframe. 
+- Work on the solution alone.
+
+What we offer:
+- Find attached the template we are using, it provides you with some of our company's style guide. It is up to you if you want to use it or not. Feel free to create something from scratch.
+- Please email me to ask any questions you might have on the problem. We want to make sure you understand what we are asking.
+
+What we are looking for:
+- User friendly design
+- Extra suggestions/advice/features/comments you have for us as a web developer/designer
+
+We also care for good quality code. please send us some samples of your code.

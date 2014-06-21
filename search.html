@@ -15,6 +15,7 @@
       
     <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">  
     
+    <link rel="stylesheet" href="/-1.10..custom/css/smoothness/jquery-ui-1.10.4.custom.css"> 
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -27,10 +28,10 @@
   <body>
       
         <!-- Navigation  -->
-      		<div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				
-				<a href="index.html" class="navbar-brand"><img src="pingar/logo_white.png"></a>
+				<a href="index.html" class="navbar-brand"><img src="pingar/footer-about-logo.png"/></a>
 
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					<span class ="icon-bar"></span>
@@ -41,31 +42,31 @@
 				<div class="collapse navbar-collapse navHeaderCollapse">	
                     <small>
 					<ul class="nav navbar-nav navbar-right" >
-						<li class="active"><a href="home.html"><i class="fa fa-home" ></i><small> HOME</small></a></li>
+						<li class="active"><a href="index.html"><i class="fa fa-home" ></i><small> HOME</small></a></li>
 					
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>PRODUCTS</small><b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="category.html">Men</a></li>
-								<li><a href="category.html">Women</a></li>
-								<li><a href="category.html">Children</a></li>
-								<li><a href="category.html">accessories</a></li>
+								<li><a href="#">SHAREPOINT</a></li>
+								<li><a href="#">TAXONOMY EDITOR</a></li>
+								<li><a href="#">API SERVER</a></li>
+								<li><a href="#">CASE STUDIES</a></li>
 								
 							</ul>
 						</li>
                         
-                        <li><a href="#login" data-toggle="modal"><small>SUPPORT</small></a></li>
+                        <li><a href="#support" data-toggle="modal"><small>SUPPORT</small></a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>ABOUT</small><b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="category.html">Men</a></li>
-								<li><a href="category.html">Women</a></li>
-								<li><a href="category.html">Children</a></li>
-								<li><a href="category.html">accessories</a></li>
-								
+								<li><a href="#">COMPANY</a></li>
+				                <li><a href="#">TEAM</a></li>
+								<li><a href="#">PARTNERS</a></li>
+								<li><a href="#">NEWS</a></li>
+								<li><a href="#">CAREERS</a></li>
 							</ul>
 						</li>
-						<li><a href="#register" data-toggle="modal"><small>CONTACT US</small></a></li>
+						<li><a href="#contact" data-toggle="modal"><small>CONTACT US</small></a></li>
                       
 					</ul>
                     </small>
@@ -77,146 +78,384 @@
       <!-- Navigation Ends  -->
       
       
-      
-      
-      
-      
-      <div class="container" style="margin-top:150px;">
-      
-        
+           
+      <!-- search bar -->
+   <div class="container" style="margin-top:16%; ">
           
-        <div class="row">
-        <div class="col-xs-3">
-         
-          <label class="checkbox" for="checkbox1">
-            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-            Unchecked
-          </label>
-          <label class="checkbox" for="checkbox2">
-            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
-            Checked
-          </label>
-          <label class="checkbox" for="checkbox3">
-            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
-            Disabled unchecked
-          </label>
-          <label class="checkbox" for="checkbox4">
-            <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked="">
-            Disabled checked
-          </label>
-        </div> <!-- /checkboxes col-xs-3 -->
-  
-           <div class="col-xs-3">
-         
-          <label class="radio">
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
-            Radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
-            Radio is on
-          </label>
+          <center><img src="pingar/logo-main.png"/></center>
+          
+          <div class="row" style="margin-top:30px; margin-bottom:25px;">
+              
+                 <div class="col-md-11">
+                      <input type="text" class="form-control" placeholder="Type File Name" style="padding:30px; ">
+                  </div>
+                    <div class="col-md-1">
+                        <a class="btn btn-default" href="search.html" style="width:100px; padding:20px;"><i class="fa fa-search fa-lg"></i></a>
+                    </div><!-- /search btn-->
+                  
+          </div><!-- /row -->
+          
+    
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <div class="row" style="margin-top:15px;">
+                <div class="col-md-6">
+                    
+                      <label for="amount">minimum confidence score: </label>
+                      <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
 
-          <label class="radio">
-            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
-            Disabled radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
-            Disabled radio is on
-          </label>
-        </div> <!-- /radios col-xs-3 -->
-          
-        
+                        <div id="slider-range-min"></div>
+                </div>
+               <!-- /slide progress bar-->
+              
+                 <div class="col-md-5" style="margin-top:20px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse"  href="#collapseOne">
+                             <center> Advance Search</center>
+                                </a>
+                            </h4>
+                        </div>
+                        <!--/panel head-->
+
+
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-xs-4">
+
+                                          <label class="checkbox" for="checkbox1">
+                                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                            .doc file
+                                          </label>
+                                          <label class="checkbox" for="checkbox2">
+                                            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+                                            .pdf file
+                                          </label>
+                                          <label class="checkbox" for="checkbox3">
+                                            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">
+                                            .docx file
+                                          </label>
+                                          <label class="checkbox" for="checkbox4">
+                                            <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox">
+                                            .txt
+                                          </label>
+                                             <label class="checkbox" for="checkbox5">
+                                            <input type="checkbox" value="" id="checkbox5" data-toggle="checkbox">
+                                            All
+                                          </label>    
+                                        
+                                        
+                                        </div> <!-- /checkboxes col-xs-3 -->
+
+                                           <div class="col-xs-4">
+
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                            Search Cloud
+                                          </label>
+                                          <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+                                            Search HDD
+                                          </label>
+                                                 <label class="radio">
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+                                            Both
+                                          </label>
+
+                                         
+                                        </div> <!-- /radios col-xs-3 -->
+
+                                        <div class="col-xs-4">
+
+                                            <input name="tagsinput" id="tagsinput" class="tagsinput" value="Version 1.0,Version 2.0,Version 3.0" />
+                                        </div>
+
+                                   
+                                </div> <!-- /row --> 
+                            </div>
+                        </div>
+                    </div><!-- /panel body-->
+
+            </div>
+              <!-- /panel -->
+              
             
-            <div class="col-xs-3">
-        
-          <input name="tagsinput" id="tagsinput" class="tagsinput" value="Clean,Fresh,Modern,Unique" />
-        </div>
-      </div> <!-- /row --> 
-            
-            
-        </div>
-      
-      
-      
-      
-      
+        </div><!-- /row -->
+           
       </div>
+       <!-- /search bar -->
+      
+      
+   
       
       
       
       
-      
-    <div class="container" style="margin-top:50px;">
+    <div class="container" style="margin-top:3%; margin-bottom:100px;">
       
         
-         <h3>Search Result</h3><br/>
+         <h3>Search Result :</h3><br/>
         
         
         
         <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse"  href="#collapseOne">
-                       Exact duplicates
-                        </a>
-                    </h4>
-                </div>
-                
-                
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
             
-            
-          <div class="panel panel-default">
+             <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse"  href="#collapseTwo">
-                  .doc
+                <a data-toggle="collapse"  href="#collapse1">
+                    <large style="color:red;padding-right:15px;font-size:160%;">3</large> Exact Duplicates are found
+                    <i class="fa fa-chevron-down"></i> 
                 </a>
               </h4>
             </div>
               
               
-            <div id="collapseTwo" class="panel-collapse collapse">
+            <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               <ul>
+                    <li style="padding:10px;">
+                        <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>  
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv2.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                        
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv3.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <i class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></i> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   
+                   </li>    
+                  
+              </ul>
+            </div>
+        </div>
+             </div>
+            
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse"  href="#collapse2">
+                    <large style="color:red; padding-right:15px;font-size:160%;">5</large>   Duplicates in different type are found
+                    <i class="fa fa-chevron-down"></i> 
+                </a>
+              </h4>
+            </div>
+              
+              
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <i class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></i>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>  
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.txt 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.doc 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <i class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></i> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.docx 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            Cv1.html 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>    
+                  
+              </ul>
               </div>
             </div>
         </div>
             
 
-          <div class="panel panel-default">
+        <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" href="#collapseThree">
-                  near-duplicates
+                <a data-toggle="collapse"  href="#collapse3">
+                    <large style="color:red; padding-right:15px;font-size:160%;">4</large>   Duplicates in different version are found
+                   <i class="fa fa-chevron-down"></i>
                 </a>
               </h4>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse">
+              
+              
+            <div id="collapse3" class="panel-collapse collapse">
               <div class="panel-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               <ul>
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            cv_v1.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   
+                   </li>  
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                            cv_v2.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                             cv_v3.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <i class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></i>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   </li>    
+                    <li style="padding:10px;">
+                         <div class="row">
+                            <div class="col-sm-3">
+                             cv_v4.pdf 
+                            </div>
+                            <div class="col-sm-4">
+                            <a class="fa fa-eye fa-lg" href="#" style="margin-left:10px;"></a>  
+                            <a class="fa fa-download fa-lg" href="#" style="margin-left:10px;"></a> 
+                            <a class="fa fa-share-square-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            <a class="fa fa-star-o fa-lg" href="#" style="margin-left:10px;" ></a>
+                            </div>
+                            <div class="col-sm-5"></div>
+                        </div>
+                   
+                   </li>    
+                  
+              </ul>
               </div>
             </div>
-          </div>
         </div>
+       
         
-        
+    </div>
         
         
     </div> <!-- /container -->
 
-            <!--   footer    -->
+       
+      
+      
+      
+            <footer class="search">   <!--   footer    -->
 		
-			<footer style="background-color:transparent; ">
-			<div class="jumbotron" style="background-color:transparent;">
 				<div class="container" >
 					<div class="row" >
 
@@ -263,14 +502,14 @@
 
 						<div class="col-lg-5" style="text-align:left;">
 												
-							<div class="small-footer">As a leader in text analytics, we solve problems faced by organizations that have large amounts of unstructured text to manage and value to extract. Our products and professional services assist your organization to create taxonomies, categorize your data, and improve your search outcomes.</div>			
+							<div class="small-footer">As a leader in text analytics, we solve problems faced by organizations that have large amounts of unstructured text to manage and value to extract. Our products                                      and professional services assist your organization to create taxonomies, categorize your data, and improve your search outcomes.</div>			
 							
                             <br/>
-                              <a href="#"class="fa fa-linkedin-square fa-2x"></a>
-                    <a href="#"class="fa fa-facebook-square fa-2x"></a>
-                    <a href="#"class="fa fa-twitter-square fa-2x"></a>
-                    <a href="#"class="fa fa-google-plus-square fa-2x"></a>
-                    <a href="#"class="fa fa-youtube-square fa-2x"></a>
+                                <a href="#"class="fa fa-linkedin-square fa-2x"></a>
+                                <a href="#"class="fa fa-facebook-square fa-2x"></a>
+                                <a href="#"class="fa fa-twitter-square fa-2x"></a>
+                                <a href="#"class="fa fa-google-plus-square fa-2x"></a>
+                                <a href="#"class="fa fa-youtube-square fa-2x"></a>
                 
                             
 						</div>
@@ -305,55 +544,176 @@
                                    
                                     <li><strong><i class="fa fa-map-marker"></i> Auckland Head Office</strong></li>
                                     <li><a href="#">152 Quay St, Level 10 
-Auckland, New Zealand</a></li><br/>
+                                            Auckland, New Zealand</a></li><br/>
                                     <li><strong><i class="fa fa-map-marker"></i> Plug & Play Tech Center</strong></li>
                                     <li><a href="#">440 N. Wolfe Rd
-Sunnyvale, CA 94085</a></li>
+                                            Sunnyvale, CA 94085</a></li>
                                     </small>
                                 </ul>    
                         </div>
                         
 					</div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-				</div>
+                                
+                                      
+				</div> <!--/container-->
                 
-			</div>
-      
-      
-            
-		</footer>
+			
     
-    
-    
-        <div class="container">
-			<div class="row">
-                <div class="col-sm-7">
-               <small>  Powered By <a href="http://blog.som2y.com"><em>sOm2y</em></a></small> 
-                
-                </div> 
-                
-                    
-                    <div class="col-sm-5" style="text-align:right;">    
+                <div class="container" style="margin-top:100px;">
+                    <div class="row">
+                        <div class="col-sm-8">
+                       <small>  <a href="https://github.com/sOm2y" class="fa fa-github fa-lg"></a>  version 1.00 |  Powered By <a href="http://blog.som2y.com"><em>sOm2y</em></a></small> 
+
+                        </div> 
 
 
-                        <small><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>  | Copyright &copy; <a href="#">2014 Pingar</a></small>
+                            <div class="col-sm-4" style="text-align:right;">    
+
+
+                                <small><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>  | Copyright &copy; <a href="#">2014 Pingar</a></small>
+
+
+                            </div>
+                    </div>
+                    </div>
+            </footer>
+      
+      
+      
+      
+            <!-- modal contact -->     
+          <div class="modal fade" id="contact" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <form class="form-horizontal">
+                            <div class="modal-header">
+                                <h6>CONTACT US</h6>
+                            </div>
+
+
+                            <div class="modal-body">
+
+                                    <div class="form-group">
+                                        <label for="contact-name" class="col-lg-3 control-label"style="text-align:center;"><i class="fa fa-user"></i> Username</label>
+
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Your name" required="1">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group">
+                                        <label for="contact-mail" class="col-lg-3 control-label" style="text-align:center;"><i class="fa fa-envelope"></i> E-mail</label>
+
+                                        <div class="col-lg-8">
+                                        <input type="mail" class="form-control" id="mail" placeholder="Enter your email" required="1">
+                                        </div>
+                                    </div>
+
+                                <div class="form-group">
+                                        <label for="contact-message" class="col-lg-3 control-label"style="text-align:center;"><i class="fa fa-comment"></i> Message</label>
+
+                                        <div class="col-lg-8">
+                                        <textarea class="form-control" rows="3" placeholder="your message" required="1">
+
+                                        </textarea>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+
+                                <a class="btn btn-default" data-dismiss="modal">CANCEL</a>
+
+                                <button class="btn btn-inverse" type="submit"><i class="fa fa-send"></i> SENT</button>
+
+                            </div>
+                        </form>
 
 
                     </div>
-            </div>
-			</div>
-       
+                </div>
+
+            </div><!-- /modal contact-->
+
+
+
+          <!-- modal support -->     
+          <div class="modal fade" id="support" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <form class="form-horizontal">
+                            <div class="modal-header">
+                                <h6>SUPPORT</h6>
+                            </div>
+
+
+                            <div class="modal-body">
+
+                                    <div class="form-group">
+                                        <label for="contact-name" class="col-lg-3 control-label"style="text-align:center;"><i class="fa fa-user"></i> Username</label>
+
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" id="name" placeholder="Enter Your name" required="1">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group">
+                                        <label for="contact-mail" class="col-lg-3 control-label" style="text-align:center;"><i class="fa fa-envelope"></i> E-mail</label>
+
+                                        <div class="col-lg-8">
+                                        <input type="mail" class="form-control" id="mail" placeholder="Enter your email" required="1">
+                                        </div>
+                                    </div>
+
+                                <div class="form-group">
+                                        <label for="contact-message" class="col-lg-3 control-label"style="text-align:center;"><i class="fa fa-comment"></i> How can we help?</label>
+
+                                        <div class="col-lg-8">
+                                        <textarea class="form-control" rows="5" placeholder="your message" required="1">
+
+                                        </textarea>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                            </div>
+                            <div class="modal-footer">
+
+                                <a class="btn btn-default" data-dismiss="modal">CANCEL</a>
+
+                                <button class="btn btn-inverse" type="submit"><i class="fa fa-send"></i> SENT</button>
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div><!-- /modal support-->
+
+      
+      
     
     <!-- Load JS here for greater good =============================-->
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="jquery-ui-1.10.4.custom/js/jquery-1.10.2.js"></script>
+    <script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
@@ -365,5 +725,41 @@ Sunnyvale, CA 94085</a></li>
     <script src="js/jquery.stacktable.js"></script>
     <script src="http://vjs.zencdn.net/4.3/video.js"></script>
     <script src="js/application.js"></script>
+   
+    <script type="text/javascript">
+      $(function() {
+        $( "#slider-range-min" ).slider({
+          range: "min",
+          value: 50,
+          min: 0,
+          max: 100,
+          slide: function( event, ui ) {
+            $( "#amount" ).val(  ui.value +" %");
+          }
+        });
+        $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) +" %");
+      });
+    </script>
+    <script type="text/javascript">
+        	
+          $(function () { $('#collapseOne').collapse('hide')});
+      
+    </script>
+     
+     <!-- HeadRoom  -->
+    <style type="text/css">
+    .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+    .headroom--unpinned {top: -100px;}
+    .headroom--pinned {top: 0;}
+    </style>
+   <script  type="text/javascript"  src="js/headroom.js"></script>      
+   <script  type="text/javascript"  src="js/jQuery.headroom.js"></script>
+    <script type="text/javascript">
+        $(".navbar-fixed-top").headroom();
+        
+        
+    </script>  
+    <!-- /HeadRoom -->
+      
   </body>
 </html>
