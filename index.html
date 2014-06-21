@@ -12,16 +12,13 @@
 
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
-      
+     
+    <!-- Loading Font awesome --> 
     <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css"> 
          
-      
+    <!-- Loading JQuery UI-->
     <link rel="stylesheet" href="/-1.10..custom/css/smoothness/jquery-ui-1.10.4.custom.css"> 
     
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-      
-      
 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -33,9 +30,9 @@
   <body>
       
         <!-- Navigation  -->
-      		<div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				
+				<!--Logo-->
 				<a href="index.html" class="navbar-brand"><img src="pingar_task/footer-about-logo.png"/></a>
 
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
@@ -46,47 +43,47 @@
 
 				<div class="collapse navbar-collapse navHeaderCollapse">	
                     <small>
-					<ul class="nav navbar-nav navbar-right" >
-						<li class="active"><a href="index.html"><i class="fa fa-home" ></i><small> HOME</small></a></li>
-					
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>PRODUCTS</small><b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">SHAREPOINT</a></li>
-								<li><a href="#">TAXONOMY EDITOR</a></li>
-								<li><a href="#">API SERVER</a></li>
-								<li><a href="#">CASE STUDIES</a></li>
-								
-							</ul>
-						</li>
-                        
-                        <li><a href="#support" data-toggle="modal"><small>SUPPORT</small></a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>ABOUT</small><b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">COMPANY</a></li>
-				                <li><a href="#">TEAM</a></li>
-								<li><a href="#">PARTNERS</a></li>
-								<li><a href="#">NEWS</a></li>
-								<li><a href="#">CAREERS</a></li>
-							</ul>
-						</li>
-						<li><a href="#contact" data-toggle="modal"><small>CONTACT US</small></a></li>
-                      
-					</ul>
+                        <ul class="nav navbar-nav navbar-right" >
+                            <li class="active"><a href="index.html"><i class="fa fa-home" ></i><small> HOME</small></a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>PRODUCTS</small><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">SHAREPOINT</a></li>
+                                    <li><a href="#">TAXONOMY EDITOR</a></li>
+                                    <li><a href="#">API SERVER</a></li>
+                                    <li><a href="#">CASE STUDIES</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#support" data-toggle="modal"><small>SUPPORT</small></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><small>ABOUT</small><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">COMPANY</a></li>
+                                    <li><a href="#">TEAM</a></li>
+                                    <li><a href="#">PARTNERS</a></li>
+                                    <li><a href="#">NEWS</a></li>
+                                    <li><a href="#">CAREERS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact" data-toggle="modal"><small>CONTACT US</small></a></li>
+
+                        </ul>
                     </small>
 				</div>
 			</div>
 
 		</div>
 
-      <!-- Navigation Ends  -->
+      <!-- /Navigation  -->
       
       
       
       
       
-      <!-- search bar -->
+      <!-- search panel -->
       <div class="container" style="margin-top:16%; ">
           
           <center><img src="pingar_task/logo-main.png"/></center>
@@ -97,20 +94,14 @@
                       <input type="text" class="form-control" placeholder="Type File Name" style="padding:30px; ">
                   </div>
                     <div class="col-md-1">
-                        <a class="btn btn-default" href="search.html" style="width:100px; padding:20px;"><i class="fa fa-search fa-lg"></i></a>
+                        <a class="btn btn-default" href="search.html" style="width:100px; padding:20px;">
+                            <i class="fa fa-search fa-lg"></i>                           
+                        </a>
                     </div><!-- /search btn-->
                   
           </div><!-- /row -->
           
-    
-          
-          
-          
-          
-          
-          
-          
-          
+           
           
           <div class="row" style="margin-top:15px;">
                 <div class="col-md-6">
@@ -119,10 +110,11 @@
                       <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
 
                         <div id="slider-range-min"></div>
-                </div>
-               <!-- /slide progress bar-->
+                </div> <!-- /slide progress bar-->
+              
               
                  <div class="col-md-5" style="margin-top:20px;">
+                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -130,8 +122,8 @@
                              <center> Advance Search</center>
                                 </a>
                             </h4>
-                        </div>
-                        <!--/panel head-->
+                        </div> <!--/advance panel head-->
+                       
 
 
                         <div id="collapseOne" class="panel-collapse collapse in">
@@ -189,62 +181,50 @@
 
                                    
                                 </div> <!-- /row --> 
-                            </div>
-                        </div>
-                    </div><!-- /panel body-->
+                            </div><!-- /advance panel body -->
+                        </div><!-- /collapse-->
+                    </div><!-- /advance panel -->
 
-            </div>
-              <!-- /panel -->
+            </div> <!-- /col-md-5 -->
+             
               
             
         </div><!-- /row -->
            
-      </div>
-       <!-- /search bar -->
+      </div> <!-- /search container -->
+      
       
       
    
-      
-      
-      
-      
+        <!--   footer    -->
                 
-               <footer class="search">   <!--   footer    -->
+      <footer class="search">   
 		
-			
-	
-			
-            
-		
-    
-      
-    
                 <div class="container" style="margin-top:350px;">
                     <div class="row">
+                        
                         <div class="col-sm-8">
                        <small>  <a href="https://github.com/sOm2y" class="fa fa-github fa-lg"></a>  version 1.00 | Powered By <a href="http://blog.som2y.com"><em>sOm2y</em></a></small> 
 
-                        </div> 
+                        </div> <!-- /col-sm -8 -->
 
 
                             <div class="col-sm-4" style="text-align:right;">    
+                                <small>
+                                    <a href="#">Privacy Policy</a> | 
+                                    <a href="#">Terms & Conditions</a>  | Copyright &copy; 
+                                    <a href="#">2014 Pingar</a>
+                                </small>
 
-
-                                <small><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>  | Copyright &copy; <a href="#">2014 Pingar</a></small>
-
-
-                            </div>
-                    </div>
-                    </div>
-            </footer>
+                            </div><!--/col-sm -4 -->
+                        </div><!-- /row -->
+                    </div><!-- /container -->
+        </footer>
+      <!-- footer ends-->
        
         
       
-      
-      
-      
-      
-      
+     
       
     <!-- modal contact -->     
       <div class="modal fade" id="contact" role="dialog">
@@ -252,6 +232,7 @@
 				<div class="modal-content">
 
 					<form class="form-horizontal">
+                        
 						<div class="modal-header">
 							<h6>CONTACT US</h6>
 						</div>
@@ -287,19 +268,17 @@
 									</textarea>
 	  								</div>
 								</div>
-                            
-				
-            
-							
 
-						</div>
+						</div><!-- /modal-body-->
+                        
+                        
 						<div class="modal-footer">
 
 							<a class="btn btn-default" data-dismiss="modal">CANCEL</a>
 						
 							<button class="btn btn-inverse" type="submit"><i class="fa fa-send"></i> SENT</button>
 							
-						</div>
+						</div><!-- /modal-footer -->
 					</form>
 
 					
@@ -351,19 +330,16 @@
 									</textarea>
 	  								</div>
 								</div>
-                            
-				
-            
-							
+    							
 
-						</div>
+						</div><!-- /modal-body-->
 						<div class="modal-footer">
 
 							<a class="btn btn-default" data-dismiss="modal">CANCEL</a>
 						
 							<button class="btn btn-inverse" type="submit"><i class="fa fa-send"></i> SENT</button>
 							
-						</div>
+						</div><!-- -/modal-footer -->
 					</form>
 
 					
@@ -372,9 +348,7 @@
             
 		</div><!-- /modal support-->
       
-      
-      
-      
+       
       
     
     <!-- Load JS here for greater good =============================-->
@@ -397,6 +371,7 @@
     <script src="js/application.js"></script>
    
     <script type="text/javascript">
+        //slider progress bar
       $(function() {
         $( "#slider-range-min" ).slider({
           range: "min",
@@ -411,22 +386,21 @@
       });
     </script>
     <script type="text/javascript">
-        	
+        	//hide collapse first 
           $(function () { $('#collapseOne').collapse('hide')});
       
     </script>
       <!-- HeadRoom  -->
     <style type="text/css">
-    .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
-    .headroom--unpinned {top: -100px;}
-    .headroom--pinned {top: 0;}
+        .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .4s ease-in-out;}
+        .headroom--unpinned {top: -100px;}
+        .headroom--pinned {top: 0;}
     </style>
    <script  type="text/javascript"  src="js/headroom.js"></script>      
    <script  type="text/javascript"  src="js/jQuery.headroom.js"></script>
     <script type="text/javascript">
         $(".navbar-fixed-top").headroom();
-        
-        
+               
     </script>  
     <!-- /HeadRoom -->
       
